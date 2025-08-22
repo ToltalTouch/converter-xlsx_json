@@ -55,8 +55,7 @@ class ProcessadorExcel:
 
                 with open(caminho_json, "w", encoding="utf-8") as file:
                     file.write(json_data)
-                    
-                print("JSON gerado com sucesso")
+                logging.info("JSON criado com sucesso")
             
 if __name__ == "__main__":
     processador = ProcessadorExcel()
